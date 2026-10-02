@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile activity
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/snake.yml"
+      - "generate_profile.py"
 
 permissions:
   contents: write
@@ -27,6 +28,11 @@ jobs:
         with:
           ref: main
 
+      - name: Generate animated streak table and activity charts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 generate_profile.py
+
       - name: Generate light and dark contribution snakes
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
@@ -40,11 +46,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          asset_dir="$RUNNER_TEMP/contribution-snake"
+          asset_dir="$RUNNER_TEMP/profile-activity"
           mkdir -p "$asset_dir"
-          cp dist/github-contribution-grid-snake*.svg "$asset_dir/"
-          test -s "$asset_dir/github-contribution-grid-snake.svg"
-          test -s "$asset_dir/github-contribution-grid-snake-dark.svg"
+          cp dist/*.svg "$asset_dir/"
+          for asset in github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg streak-stats.svg streak-stats-dark.svg activity-chart.svg activity-chart-dark.svg; do
+            test -s "$asset_dir/$asset"
+          done
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -57,10 +64,10 @@ jobs:
           fi
 
           cp "$asset_dir/"*.svg .
-          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          git add -- '*.svg'
           if git diff --cached --quiet; then
-            echo "Contribution snake is already up to date."
+            echo "Profile activity is already up to date."
           else
-            git commit -m "chore: refresh contribution snake"
+            git commit -m "chore: refresh profile activity"
             git push origin HEAD:output
           fi
