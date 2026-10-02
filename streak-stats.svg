@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="270" viewBox="0 0 1000 270" role="img" aria-labelledby="title description">
+<title id="title">Contribution streaks</title><desc id="description">Public contribution totals since 2024-11-01: 346 contributions, current streak 1 days, longest streak 6 days. Updated 2026-10-02 UTC.</desc>
+<style>
+text{font-family:Segoe UI,Arial,sans-serif}
+.reveal{animation:reveal .9s ease-out both}
+.orbit{transform-box:fill-box;transform-origin:center;animation:orbit 14s linear infinite}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+.trace{stroke-dasharray:1;stroke-dashoffset:0;animation:trace 9s ease-in-out infinite}
+.bar{transform-box:fill-box;transform-origin:center bottom;animation:grow 1.2s ease-out both}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:1;transform:scale(1.35)}}
+@keyframes trace{0%{stroke-dashoffset:1;opacity:.5}30%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:1}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.reveal,.orbit,.pulse,.trace,.bar{animation:none;transform:none;opacity:1;stroke-dashoffset:0}}
+</style>
+<rect width="1000" height="270" rx="18" fill="#f6f8fc"/>
+
+<text x="32" y="40" font-size="17" font-weight="600" fill="#0f172a">CONSISTENCY / CONTRIBUTION STREAKS</text>
+<text x="32" y="63" font-size="12" fill="#64748b">Public GitHub calendar · refreshed daily · UTC</text>
+<path d="M333 90V224" stroke="#e2e8f0"/>
+<path d="M667 90V224" stroke="#e2e8f0"/>
+<circle cx="500" cy="144" r="44" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+<circle class="orbit" cx="500" cy="144" r="44" fill="none" stroke="#0f766e" stroke-width="3" stroke-dasharray="75 18 35 148" stroke-linecap="round"/>
+<text class="reveal" x="166" y="156" text-anchor="middle" font-size="40" font-weight="700" fill="#0f172a">346</text>
+<text x="166" y="211" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="1" fill="#7c3aed">TOTAL CONTRIBUTIONS</text>
+<text x="166" y="232" text-anchor="middle" font-size="12" fill="#64748b">Since Nov 2024</text>
+<text class="reveal" x="500" y="156" text-anchor="middle" font-size="40" font-weight="700" fill="#0f172a">1</text>
+<text x="500" y="211" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="1" fill="#0f766e">CURRENT STREAK</text>
+<text x="500" y="232" text-anchor="middle" font-size="12" fill="#64748b">Consecutive days</text>
+<text class="reveal" x="834" y="156" text-anchor="middle" font-size="40" font-weight="700" fill="#0f172a">6</text>
+<text x="834" y="211" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="1" fill="#7c3aed">LONGEST STREAK</text>
+<text x="834" y="232" text-anchor="middle" font-size="12" fill="#64748b">Personal best · days</text>
+<text x="968" y="255" text-anchor="end" font-size="10" fill="#64748b">Updated 2026-10-02</text></svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title description">
+<title id="title">Contribution activity — last 31 days</title><desc id="description">Daily public GitHub contributions from 2026-09-02 to 2026-10-02. Total 8 contributions on 2 active days.</desc>
+<style>
+text{font-family:Segoe UI,Arial,sans-serif}
+.reveal{animation:reveal .9s ease-out both}
+.orbit{transform-box:fill-box;transform-origin:center;animation:orbit 14s linear infinite}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+.trace{stroke-dasharray:1;stroke-dashoffset:0;animation:trace 9s ease-in-out infinite}
+.bar{transform-box:fill-box;transform-origin:center bottom;animation:grow 1.2s ease-out both}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:1;transform:scale(1.35)}}
+@keyframes trace{0%{stroke-dashoffset:1;opacity:.5}30%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:1}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.reveal,.orbit,.pulse,.trace,.bar{animation:none;transform:none;opacity:1;stroke-dashoffset:0}}
+</style>
+<rect width="1000" height="360" rx="18" fill="#0d1425"/>
+
+<text x="32" y="40" font-size="17" font-weight="600" fill="#f8fafc">ACTIVITY / LAST 31 DAYS</text>
+<text x="32" y="65" font-size="12" fill="#94a3b8">8 contributions · 2 active days · daily totals</text>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5eead4" stop-opacity=".25"/><stop offset="1" stop-color="#5eead4" stop-opacity=".015"/></linearGradient></defs>
+<path d="M65 286H960" stroke="#243047" stroke-dasharray="3 7"/>
+<text x="50" y="290" text-anchor="end" font-size="11" fill="#94a3b8">0</text>
+<path d="M65 239.5H960" stroke="#243047" stroke-dasharray="3 7"/>
+<text x="50" y="243.5" text-anchor="end" font-size="11" fill="#94a3b8">1.75</text>
+<path d="M65 193.0H960" stroke="#243047" stroke-dasharray="3 7"/>
+<text x="50" y="197.0" text-anchor="end" font-size="11" fill="#94a3b8">3.5</text>
+<path d="M65 146.5H960" stroke="#243047" stroke-dasharray="3 7"/>
+<text x="50" y="150.5" text-anchor="end" font-size="11" fill="#94a3b8">5.25</text>
+<path d="M65 100H960" stroke="#243047" stroke-dasharray="3 7"/>
+<text x="50" y="104" text-anchor="end" font-size="11" fill="#94a3b8">7</text>
+<path d="M65.00,286.00 L94.83,286.00 L124.67,286.00 L154.50,286.00 L184.33,286.00 L214.17,286.00 L244.00,286.00 L273.83,259.43 L303.67,286.00 L333.50,286.00 L363.33,286.00 L393.17,286.00 L423.00,286.00 L452.83,286.00 L482.67,286.00 L512.50,286.00 L542.33,286.00 L572.17,286.00 L602.00,286.00 L631.83,286.00 L661.67,286.00 L691.50,286.00 L721.33,286.00 L751.17,286.00 L781.00,286.00 L810.83,286.00 L840.67,286.00 L870.50,286.00 L900.33,286.00 L930.17,286.00 L960.00,100.00 L960,286 L65,286 Z" fill="url(#area)"/>
+<rect class="bar" x="269.83333333333337" y="259.42857142857144" width="8" height="26.571428571428555" rx="3" fill="#5eead4" opacity=".17" style="animation-delay:0.175s"/>
+<rect class="bar" x="956.0" y="100.0" width="8" height="186.0" rx="3" fill="#5eead4" opacity=".17" style="animation-delay:0.750s"/>
+<path class="trace" d="M65.00,286.00 L94.83,286.00 L124.67,286.00 L154.50,286.00 L184.33,286.00 L214.17,286.00 L244.00,286.00 L273.83,259.43 L303.67,286.00 L333.50,286.00 L363.33,286.00 L393.17,286.00 L423.00,286.00 L452.83,286.00 L482.67,286.00 L512.50,286.00 L542.33,286.00 L572.17,286.00 L602.00,286.00 L631.83,286.00 L661.67,286.00 L691.50,286.00 L721.33,286.00 L751.17,286.00 L781.00,286.00 L810.83,286.00 L840.67,286.00 L870.50,286.00 L900.33,286.00 L930.17,286.00 L960.00,100.00" pathLength="1" fill="none" stroke="#5eead4" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="65.00" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 02</text>
+<text x="214.17" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 07</text>
+<circle class="pulse" cx="273.83" cy="259.43" r="4" fill="#c4b5fd" style="animation-delay:0.84s"><title>2026-09-09: 1 contributions</title></circle>
+<text x="363.33" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 12</text>
+<text x="512.50" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 17</text>
+<text x="661.67" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 22</text>
+<text x="810.83" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Sep 27</text>
+<circle class="pulse" cx="960.00" cy="100.00" r="4" fill="#c4b5fd" style="animation-delay:3.60s"><title>2026-10-02: 7 contributions</title></circle>
+<text x="960.00" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">Oct 02</text>
+<text x="32" y="342" font-size="10" fill="#94a3b8">Source: GitHub public contribution calendar · updated 2026-10-02 UTC</text></svg>
