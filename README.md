@@ -79,6 +79,24 @@ An email application with background workers for queued SMTP sending and IMAP re
 <img alt="Obsidian" src="https://img.shields.io/badge/Obsidian-111827?style=flat-square&logo=obsidian&logoColor=C4B5FD" />
 </p>
 
+### Contribution streaks
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/streak-stats-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/streak-stats.svg" />
+  <img alt="Ankit Rai's total public contributions, current streak count, and longest streak count" src="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/streak-stats.svg" width="100%" />
+</picture>
+
+### Activity over the last 31 days
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/activity-chart-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/activity-chart.svg" />
+  <img alt="Animated chart of Ankit Rai's daily public GitHub contributions over the last 31 days" src="https://raw.githubusercontent.com/Ankitrai97/Ankitrai97/output/activity-chart.svg" width="100%" />
+</picture>
+
+<sub>Streak counts and activity use GitHub's public contribution calendar and refresh daily. Dates are UTC; an empty today keeps yesterday's streak active until the day ends.</sub>
+
 ### A little progress, every day
 
 <picture>
