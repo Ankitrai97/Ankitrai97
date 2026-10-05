@@ -56,18 +56,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          publish_dir="$RUNNER_TEMP/profile-output"
           if git ls-remote --exit-code --heads origin output > /dev/null; then
             git fetch origin output:refs/remotes/origin/output
-            git switch --create output --track origin/output
+            git worktree add --detach "$publish_dir" origin/output
           else
-            git switch --orphan output
+            git worktree add --detach "$publish_dir" HEAD
+            git -C "$publish_dir" switch --orphan output
           fi
 
-          cp "$asset_dir/"*.svg .
-          git add -- '*.svg'
-          if git diff --cached --quiet; then
+          cp "$asset_dir/"*.svg "$publish_dir/"
+          git -C "$publish_dir" add -- github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg streak-stats.svg streak-stats-dark.svg activity-chart.svg activity-chart-dark.svg
+          if git -C "$publish_dir" diff --cached --quiet; then
             echo "Profile activity is already up to date."
           else
-            git commit -m "chore: refresh profile activity"
-            git push origin HEAD:output
+            git -C "$publish_dir" commit -m "chore: refresh profile activity"
+            git -C "$publish_dir" push origin HEAD:output
           fi
